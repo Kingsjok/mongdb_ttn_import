@@ -1,4 +1,4 @@
-NDATA=$(curl -s -X GET --header 'Accept: application/json' --header 'Authorization: key ttn-account-v2.KyDWIhUE4gxukH--yr72Bji7mER29Xq9Jp2f6C5sQvk' 'https://test_sensor_da.data.thethingsnetwork.org/api/v2/query/test_node_tbeamvt?last=2d')
+NDATA=$(curl -s -X GET --header 'Accept: application/json' --header 'Authorization: key....)  //u get this from Data storage website
 if [ -z "$NDATA"]
 then
 	echo "\$ no data"
