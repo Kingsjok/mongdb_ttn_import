@@ -1,15 +1,19 @@
-NDATA=$(curl -s -X GET --header 'Accept: application/json' --header 'Authorization: key....)  //u get this from Data storage website
+NDATA=$(curl -s -X GET --header 'Accept: application/json' --header 'Authorization: key....)  
+#get this curl sentence from Data storage website
 if [ -z "$NDATA"]
 then
 	echo "\$ no data"
 else
-	mongo ttn --eval "db.ttn1.insertMany($NDATA)"
-	mongo ttn ~/dropdups.js
+	mongo mydb --eval "db.mycollection.insertMany($NDATA)" 
+#replace 'mydb', 'mycollection'
+	mongo mydb ~/dropdups.js  
+#replace 'mydb'
 fi
 
+#below just for testing
 
-#mongo ttn --eval 'db.ttn1.find()'
+#mongo ttn --eval 'db.mycollection.find()'
 #echo $NDATA
 #echo $NDATA | jq '.[]'
-#echo "db.ttn1.insertMany($NDATA)"
+#echo "db.mycollection.insertMany($NDATA)"
 
