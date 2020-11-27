@@ -10,63 +10,53 @@ This project was built using
 
 P.S: the Data Storage needed to be added inside Console->Integrations
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- Ubuntu system
+- Account and useful data source from The Things Network
 
-```
-Give examples
-```
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+In order to use curl:
 
 ```
-Give the example
+sudo apt-get install curl
 ```
 
-And repeat
+follow instructions from [mongoDB install](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+
+use :
 
 ```
-until finished
+sudo apt-get install mongodb
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+instead of "mongodb-org"
 
-## Running the tests
+then:
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+1. run mongodb
+2. create new db
+3. create new collection
+4. edit code
+5. using runme.sh for updating, dropdups.js for removing duplications
+6. set up crontab
 
 ```
-Give an example
+crontab -e
 ```
+fill in
 
-## Deployment
+```
+*/5 * * * * ~/runme.sh
+```
+means execute the rume.sh every 5mins
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
