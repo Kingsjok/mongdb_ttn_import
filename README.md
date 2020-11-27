@@ -42,8 +42,7 @@ then:
 2. create new db
 3. create new collection
 4. edit code
-5. using runme.sh for updating, dropdups.js for removing duplications
-6. set up crontab
+5. set up crontab
 
 ```
 crontab -e
@@ -68,17 +67,12 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Xiangjun Wei** - *Initial work* - [Kingsjok](https://github.com/Kingsjok)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
