@@ -1,5 +1,5 @@
 # mongdb_ttn_import
-import ttn data into mongodb 
+import TTN(The Things Network) data into mongodb 
 
 ## Getting Started
 
@@ -55,24 +55,8 @@ fill in
 means execute the rume.sh every 5mins
 
 
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Xiangjun Wei** - *Initial work* - [Kingsjok](https://github.com/Kingsjok)
-
-
-## License
-
-
-## Acknowledgments
 
 
