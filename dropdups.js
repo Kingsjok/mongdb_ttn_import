@@ -21,3 +21,4 @@ db.mycollection.aggregate([ //replace 'mycollection'
      db.mycollection.remove({_id : {$in: doc.dups }});  // Delete remaining duplicates
     })
 
+// credit to tejpratap46 url:https://gist.github.com/tejpratap46/8e825af66ac2f8c3b22848ff82939ba3
