@@ -1,4 +1,4 @@
-db.ttn1.aggregate([
+db.mycollection.aggregate([ //replace 'mycollection'
       // discard selection criteria, You can remove "$match" section if you want
       { $group: { 
         _id: { time: "$time"}, // can be grouped on multiple properties 
@@ -8,7 +8,7 @@ db.ttn1.aggregate([
       { $match: { 
         count: { "$gt": 1 }    // Duplicates considered as count greater than one
       }}
-      //{$out : "ttn2"}
+      //{$out : "ttn2"} just for testing
     ])
     
                   // You can display result until this and check duplicates 
@@ -18,6 +18,6 @@ db.ttn1.aggregate([
      
      doc.dups.shift();      // First element skipped for deleting
      
-     db.ttn1.remove({_id : {$in: doc.dups }});  // Delete remaining duplicates
+     db.mycollection.remove({_id : {$in: doc.dups }});  // Delete remaining duplicates
     })
 
